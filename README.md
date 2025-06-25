@@ -52,15 +52,3 @@
 3. **Arrástralo** al formulario.  
    *(Si no aparece, haz clic derecho en el Cuadro → "Actualizar")*.  
 
----
-
-#### **🔹 PASO 6: Crear y Vincular un Informe RDLC**  
-1. **Click derecho en el proyecto** → **"Agregar" → "Nuevo elemento"**.  
-2. Selecciona **"Informe"** (usando la plantilla del diseñador instalado).  
-3. **Diseña tu informe** (agrega datasets desde el **"Asistente de Datos"**).  
-4. **Carga el informe en el control** (en el evento `Form_Load`):  
-   ```csharp  
-   private void Form1_Load(object sender, EventArgs e) {  
-       reportViewer1.LocalReport.ReportPath = "Informe1.rdlc";  
-       reportViewer1.RefreshReport();  
-   }  
